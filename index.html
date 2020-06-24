@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- bootstrap cdn -->
+  <link rel="stylesheet" href="libs/bootstrap/bootstrap.min.css">
+
+  <title>Vue</title>
+</head>
+
+<body>
+
+  <div id="app">
+    <header>
+      <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            Vue
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <!-- Left Side Of Navbar -->
+            <ul class="navbar-nav mr-auto">
+
+            </ul>
+
+            <!-- Right Side Of Navbar -->
+            <ul class="navbar-nav ml-auto">
+              <!-- Authentication Links -->
+
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+              <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="py-4">
+      <div class="container">
+        <div class="row justify-content-center">
+
+          <div class="col-md-10">
+
+            <!-- button add - edit -->
+            <div class="d-flex justify-content-end">
+              <button class="btn btn-success mb-3">Add Student</button>
+            </div>
+
+            <!-- add form -->
+            <div class="row justify-content-center">
+              <div class="col-md-8">
+                <div class="card card-default my-5">
+                  <div class="card-header">
+                    <h1 class="text-center">Add Student</h1>
+                  </div>
+
+                  <div class="card-body">
+
+                    <!-- add form -->
+                    <form id="">
+
+                      <div class="form-group">
+                        <label for="name">Name: </label>
+                        <input class="form-control" id="name" name="name" type="text">
+                      </div>
+
+                      <div class="form-group">
+                        <label for="age">Age</label>
+                        <input class="form-control" id="age" name="age" type="text">
+                      </div>
+
+                      <div class="form-group">
+                        <label for="phoneNumber">Phone Number:</label>
+                        <input class="form-control" id="phoneNumber" name="phoneNumber" type="text">
+                      </div>
+                      <div class="form-group d-flex justify-content-between">
+                        <button type="submit" class="btn btn-success">
+                          Add
+                        </button>
+
+                        <button type="button" class="btn btn-danger ml-auto">
+                          Close
+                        </button>
+                      </div>
+                    </form>
+                  </div>
+
+
+                </div>
+              </div>
+            </div>
+
+            <!-- list students -->
+            <div class="card card-default">
+              <div class="card-header">
+
+                <h1 class="text-center">Students</h1>
+
+              </div>
+
+              <div class="card-body">
+                <table class="table">
+                  <thead>
+
+                    <th>STT</th>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>Phone Number</th>
+                    <th>Action</th>
+
+                  </thead>
+
+                  <tbody>
+
+                    <tr>
+
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td>
+                        <button class="btn btn-sm btn-info mr-2">Edit</button>
+                        <button class="btn btn-sm btn-danger">Delete</button>
+                      </td>
+
+                    </tr>
+
+                  </tbody>
+
+                </table>
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </main>
+  </div>
+
+
+
+
+  <!-- vue -->
+  <script src="libs/vue.js"></script>
+
+  <!-- jquery -->
+  <script src="libs/jquery/jquery-3.5.1.slim.min.js"></script>
+
+  <!-- bootstrap JS -->
+  <script src="libs/bootstrap/bootstrap.min.js"></script>
+
+  <!-- popper -->
+  <script src="libs/popper.min.js"></script>
+
+  <!-- libs -->
+  <script src="libs/faker.min.js"></script>
+
+  <!-- main script -->
+  <script src="js/main.js"></script>
+</body>
+
+</html>
